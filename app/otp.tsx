@@ -95,7 +95,7 @@ const Page = () => {
       phoneNumberId,
     });
 
-    router.push(`/verify/${phoneNumber}?signin=true`);
+    router.push(`/verify/${phoneNumber}`);
     setLoading(false);
   };
 

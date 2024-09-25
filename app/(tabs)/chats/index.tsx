@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, FlatList } from 'react-native';
-// import chats from '@/assets/data/chats.json';
-// import ChatRow from '@/components/ChatRow';
+import chats from '@/assets/data/chat.json';
+import ChatRow from '@/components/ChatRow';
 import { defaultStyles } from '@/constants/Styles';
 
 const Page = () => {
@@ -8,7 +8,7 @@ const Page = () => {
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
       contentContainerStyle={{ paddingBottom: 40, flex: 1, backgroundColor: '#fff' }}>
-      {/* <FlatList
+      <FlatList
         data={chats}
         renderItem={({ item }) => <ChatRow {...item} />}
         keyExtractor={(item) => item.id.toString()}
@@ -16,7 +16,7 @@ const Page = () => {
           <View style={[defaultStyles.separator, { marginLeft: 90 }]} />
         )}
         scrollEnabled={false}
-      /> */}
+      />
     </ScrollView>
   );
 };
